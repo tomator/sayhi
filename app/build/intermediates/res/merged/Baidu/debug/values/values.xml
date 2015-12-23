@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ambers">
+        <item>@color/md_amber_500</item>
+        <item>@color/md_amber_50</item>
+        <item>@color/md_amber_100</item>
+        <item>@color/md_amber_200</item>
+        <item>@color/md_amber_300</item>
+        <item>@color/md_amber_400</item>
+        <item>@color/md_amber_600</item>
+        <item>@color/md_amber_700</item>
+        <item>@color/md_amber_800</item>
+        <item>@color/md_amber_900</item>
+        <item>@color/md_amber_A100</item>
+        <item>@color/md_amber_A200</item>
+        <item>@color/md_amber_A400</item>
+        <item>@color/md_amber_A700</item>
+    </array>
+    <array name="blue_greys">
+        <item>@color/md_blue_grey_500</item>
+        <item>@color/md_blue_grey_50</item>
+        <item>@color/md_blue_grey_100</item>
+        <item>@color/md_blue_grey_200</item>
+        <item>@color/md_blue_grey_300</item>
+        <item>@color/md_blue_grey_400</item>
+        <item>@color/md_blue_grey_600</item>
+        <item>@color/md_blue_grey_700</item>
+        <item>@color/md_blue_grey_800</item>
+        <item>@color/md_blue_grey_900</item>
+    </array>
+    <array name="blues">
+        <item>@color/md_blue_500</item>
+        <item>@color/md_blue_50</item>
+        <item>@color/md_blue_100</item>
+        <item>@color/md_blue_200</item>
+        <item>@color/md_blue_300</item>
+        <item>@color/md_blue_400</item>
+        <item>@color/md_blue_600</item>
+        <item>@color/md_blue_700</item>
+        <item>@color/md_blue_800</item>
+        <item>@color/md_blue_900</item>
+        <item>@color/md_blue_A100</item>
+        <item>@color/md_blue_A200</item>
+        <item>@color/md_blue_A400</item>
+        <item>@color/md_blue_A700</item>
+    </array>
+    <array name="browns">
+        <item>@color/md_brown_500</item>
+        <item>@color/md_brown_50</item>
+        <item>@color/md_brown_100</item>
+        <item>@color/md_brown_200</item>
+        <item>@color/md_brown_300</item>
+        <item>@color/md_brown_400</item>
+        <item>@color/md_brown_600</item>
+        <item>@color/md_brown_700</item>
+        <item>@color/md_brown_800</item>
+        <item>@color/md_brown_900</item>
+    </array>
+    <array name="cyans">
+        <item>@color/md_cyan_500</item>
+        <item>@color/md_cyan_50</item>
+        <item>@color/md_cyan_100</item>
+        <item>@color/md_cyan_200</item>
+        <item>@color/md_cyan_300</item>
+        <item>@color/md_cyan_400</item>
+        <item>@color/md_cyan_600</item>
+        <item>@color/md_cyan_700</item>
+        <item>@color/md_cyan_800</item>
+        <item>@color/md_cyan_900</item>
+        <item>@color/md_cyan_A100</item>
+        <item>@color/md_cyan_A200</item>
+        <item>@color/md_cyan_A400</item>
+        <item>@color/md_cyan_A700</item>
+    </array>
+    <array name="deep_oranges">
+        <item>@color/md_deep_orange_500</item>
+        <item>@color/md_deep_orange_50</item>
+        <item>@color/md_deep_orange_100</item>
+        <item>@color/md_deep_orange_200</item>
+        <item>@color/md_deep_orange_300</item>
+        <item>@color/md_deep_orange_400</item>
+        <item>@color/md_deep_orange_600</item>
+        <item>@color/md_deep_orange_700</item>
+        <item>@color/md_deep_orange_800</item>
+        <item>@color/md_deep_orange_900</item>
+        <item>@color/md_deep_orange_A100</item>
+        <item>@color/md_deep_orange_A200</item>
+        <item>@color/md_deep_orange_A400</item>
+        <item>@color/md_deep_orange_A700</item>
+    </array>
+    <array name="deep_purples">
+        <item>@color/md_deep_purple_500</item>
+        <item>@color/md_deep_purple_50</item>
+        <item>@color/md_deep_purple_100</item>
+        <item>@color/md_deep_purple_200</item>
+        <item>@color/md_deep_purple_300</item>
+        <item>@color/md_deep_purple_400</item>
+        <item>@color/md_deep_purple_600</item>
+        <item>@color/md_deep_purple_700</item>
+        <item>@color/md_deep_purple_800</item>
+        <item>@color/md_deep_purple_900</item>
+        <item>@color/md_deep_purple_A100</item>
+        <item>@color/md_deep_purple_A200</item>
+        <item>@color/md_deep_purple_A400</item>
+        <item>@color/md_deep_purple_A700</item>
+    </array>
+    <array name="greens">
+        <item>@color/md_green_500</item>
+        <item>@color/md_green_50</item>
+        <item>@color/md_green_100</item>
+        <item>@color/md_green_200</item>
+        <item>@color/md_green_300</item>
+        <item>@color/md_green_400</item>
+        <item>@color/md_green_600</item>
+        <item>@color/md_green_700</item>
+        <item>@color/md_green_800</item>
+        <item>@color/md_green_900</item>
+        <item>@color/md_green_A100</item>
+        <item>@color/md_green_A200</item>
+        <item>@color/md_green_A400</item>
+        <item>@color/md_green_A700</item>
+    </array>
+    <array name="greys">
+        <item>@color/md_grey_500</item>
+        <item>@color/md_grey_50</item>
+        <item>@color/md_grey_100</item>
+        <item>@color/md_grey_200</item>
+        <item>@color/md_grey_300</item>
+        <item>@color/md_grey_400</item>
+        <item>@color/md_grey_600</item>
+        <item>@color/md_grey_700</item>
+        <item>@color/md_grey_800</item>
+        <item>@color/md_grey_900</item>
+        <item>@color/md_black_1000</item>
+        <item>@color/md_white_1000</item>
+    </array>
+    <array name="indigos">
+        <item>@color/md_indigo_500</item>
+        <item>@color/md_indigo_50</item>
+        <item>@color/md_indigo_100</item>
+        <item>@color/md_indigo_200</item>
+        <item>@color/md_indigo_300</item>
+        <item>@color/md_indigo_400</item>
+        <item>@color/md_indigo_600</item>
+        <item>@color/md_indigo_700</item>
+        <item>@color/md_indigo_800</item>
+        <item>@color/md_indigo_900</item>
+        <item>@color/md_indigo_A100</item>
+        <item>@color/md_indigo_A200</item>
+        <item>@color/md_indigo_A400</item>
+        <item>@color/md_indigo_A700</item>
+    </array>
+    <array name="light_blues">
+        <item>@color/md_light_blue_500</item>
+        <item>@color/md_light_blue_50</item>
+        <item>@color/md_light_blue_100</item>
+        <item>@color/md_light_blue_200</item>
+        <item>@color/md_light_blue_300</item>
+        <item>@color/md_light_blue_400</item>
+        <item>@color/md_light_blue_600</item>
+        <item>@color/md_light_blue_700</item>
+        <item>@color/md_light_blue_800</item>
+        <item>@color/md_light_blue_900</item>
+        <item>@color/md_light_blue_A100</item>
+        <item>@color/md_light_blue_A200</item>
+        <item>@color/md_light_blue_A400</item>
+        <item>@color/md_light_blue_A700</item>
+    </array>
+    <array name="light_greens">
+        <item>@color/md_light_green_500</item>
+        <item>@color/md_light_green_50</item>
+        <item>@color/md_light_green_100</item>
+        <item>@color/md_light_green_200</item>
+        <item>@color/md_light_green_300</item>
+        <item>@color/md_light_green_400</item>
+        <item>@color/md_light_green_600</item>
+        <item>@color/md_light_green_700</item>
+        <item>@color/md_light_green_800</item>
+        <item>@color/md_light_green_900</item>
+        <item>@color/md_light_green_A100</item>
+        <item>@color/md_light_green_A200</item>
+        <item>@color/md_light_green_A400</item>
+        <item>@color/md_light_green_A700</item>
+    </array>
+    <array name="limes">
+        <item>@color/md_lime_500</item>
+        <item>@color/md_lime_50</item>
+        <item>@color/md_lime_100</item>
+        <item>@color/md_lime_200</item>
+        <item>@color/md_lime_300</item>
+        <item>@color/md_lime_400</item>
+        <item>@color/md_lime_600</item>
+        <item>@color/md_lime_700</item>
+        <item>@color/md_lime_800</item>
+        <item>@color/md_lime_900</item>
+        <item>@color/md_lime_A100</item>
+        <item>@color/md_lime_A200</item>
+        <item>@color/md_lime_A400</item>
+        <item>@color/md_lime_A700</item>
+    </array>
+    <array name="oranges">
+        <item>@color/md_orange_500</item>
+        <item>@color/md_orange_50</item>
+        <item>@color/md_orange_100</item>
+        <item>@color/md_orange_200</item>
+        <item>@color/md_orange_300</item>
+        <item>@color/md_orange_400</item>
+        <item>@color/md_orange_600</item>
+        <item>@color/md_orange_700</item>
+        <item>@color/md_orange_800</item>
+        <item>@color/md_orange_900</item>
+        <item>@color/md_orange_A100</item>
+        <item>@color/md_orange_A200</item>
+        <item>@color/md_orange_A400</item>
+        <item>@color/md_orange_A700</item>
+    </array>
+    <array name="pinks">
+        <item>@color/md_pink_500</item>
+        <item>@color/md_pink_50</item>
+        <item>@color/md_pink_100</item>
+        <item>@color/md_pink_200</item>
+        <item>@color/md_pink_300</item>
+        <item>@color/md_pink_400</item>
+        <item>@color/md_pink_600</item>
+        <item>@color/md_pink_700</item>
+        <item>@color/md_pink_800</item>
+        <item>@color/md_pink_900</item>
+        <item>@color/md_pink_A100</item>
+        <item>@color/md_pink_A200</item>
+        <item>@color/md_pink_A400</item>
+        <item>@color/md_pink_A700</item>
+    </array>
+    <array name="purples">
+        <item>@color/md_purple_500</item>
+        <item>@color/md_purple_50</item>
+        <item>@color/md_purple_100</item>
+        <item>@color/md_purple_200</item>
+        <item>@color/md_purple_300</item>
+        <item>@color/md_purple_400</item>
+        <item>@color/md_purple_600</item>
+        <item>@color/md_purple_700</item>
+        <item>@color/md_purple_800</item>
+        <item>@color/md_purple_900</item>
+        <item>@color/md_purple_A100</item>
+        <item>@color/md_purple_A200</item>
+        <item>@color/md_purple_A400</item>
+        <item>@color/md_purple_A700</item>
+    </array>
+    <array name="reds">
+        <item>@color/md_red_500</item>
+        <item>@color/md_red_50</item>
+        <item>@color/md_red_100</item>
+        <item>@color/md_red_200</item>
+        <item>@color/md_red_300</item>
+        <item>@color/md_red_400</item>
+        <item>@color/md_red_600</item>
+        <item>@color/md_red_700</item>
+        <item>@color/md_red_800</item>
+        <item>@color/md_red_900</item>
+        <item>@color/md_red_A100</item>
+        <item>@color/md_red_A200</item>
+        <item>@color/md_red_A400</item>
+        <item>@color/md_red_A700</item>
+    </array>
+    <string-array name="refresh_header_text">
+        <item>hell,love,like</item>
+    </string-array>
+    <array name="teals">
+        <item>@color/md_teal_500</item>
+        <item>@color/md_teal_50</item>
+        <item>@color/md_teal_100</item>
+        <item>@color/md_teal_200</item>
+        <item>@color/md_teal_300</item>
+        <item>@color/md_teal_400</item>
+        <item>@color/md_teal_600</item>
+        <item>@color/md_teal_700</item>
+        <item>@color/md_teal_800</item>
+        <item>@color/md_teal_900</item>
+        <item>@color/md_teal_A100</item>
+        <item>@color/md_teal_A200</item>
+        <item>@color/md_teal_A400</item>
+        <item>@color/md_teal_A700</item>
+    </array>
+    <array name="yellows">
+        <item>@color/md_yellow_500</item>
+        <item>@color/md_yellow_50</item>
+        <item>@color/md_yellow_100</item>
+        <item>@color/md_yellow_200</item>
+        <item>@color/md_yellow_300</item>
+        <item>@color/md_yellow_400</item>
+        <item>@color/md_yellow_600</item>
+        <item>@color/md_yellow_700</item>
+        <item>@color/md_yellow_800</item>
+        <item>@color/md_yellow_900</item>
+        <item>@color/md_yellow_A100</item>
+        <item>@color/md_yellow_A200</item>
+        <item>@color/md_yellow_A400</item>
+        <item>@color/md_yellow_A700</item>
+    </array>
+    <attr format="boolean" name="centered"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_line_indicator_centered">true</bool>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
+    <color name="base_action_bar_title_color">#2f2725</color>
+    <color name="base_actionbar_bg">#f5f5f5</color>
+    <color name="base_bg">#f4f6f6</color>
+    <color name="base_color_text_black">#3e3e39</color>
+    <color name="base_color_text_gray">#9fa0a0</color>
+    <color name="base_color_text_white">#ffffff</color>
+    <color name="base_menu_left_bg">#393c44</color>
+    <color name="base_tab_indicator_text_color">#f82c22</color>
+    <color name="c_f98800">#ed4e23</color>
+    <color name="cardview_dark_background">#FF202020</color>
+    <color name="cardview_light_background">#FFFAFAFA</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="color_bottom_bg">#272a2e</color>
+    <color name="color_bottom_text_normal">#9da0a4</color>
+    <color name="color_bottom_text_press">#4f9ef6</color>
+    <color name="color_half_transparent">#b0000000</color>
+    <color name="color_theme">#489cfa</color>
+    <color name="color_transparent_bg">#80000000</color>
+    <color name="color_transparent_bg1">#e0000000</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <color name="dialog_color_title">#f82c22</color>
+    <color name="global_pink">@color/md_pink_300</color>
+    <color name="guide_color">#898989</color>
+    <color name="home_item_color_bg">#f4f6f6</color>
+    <color name="md_amber_100">#ffecb3</color>
+    <color name="md_amber_200">#ffe082</color>
+    <color name="md_amber_300">#ffd54f</color>
+    <color name="md_amber_400">#ffca28</color>
+    <color name="md_amber_50">#fff8e1</color>
+    <color name="md_amber_500">#ffc107</color>
+    <color name="md_amber_600">#ffb300</color>
+    <color name="md_amber_700">#ffa000</color>
+    <color name="md_amber_800">#ff8f00</color>
+    <color name="md_amber_900">#ff6f00</color>
+    <color name="md_amber_A100">#ffe57f</color>
+    <color name="md_amber_A200">#ffd740</color>
+    <color name="md_amber_A400">#ffc400</color>
+    <color name="md_amber_A700">#ffab00</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="md_blue_100">#d0d9ff</color>
+    <color name="md_blue_200">#afbfff</color>
+    <color name="md_blue_300">#91a7ff</color>
+    <color name="md_blue_400">#738ffe</color>
+    <color name="md_blue_50">#e7e9fd</color>
+    <color name="md_blue_500">#5677fc</color>
+    <color name="md_blue_600">#4e6cef</color>
+    <color name="md_blue_700">#455ede</color>
+    <color name="md_blue_800">#3b50ce</color>
+    <color name="md_blue_900">#2a36b1</color>
+    <color name="md_blue_A100">#a6baff</color>
+    <color name="md_blue_A200">#6889ff</color>
+    <color name="md_blue_A400">#4d73ff</color>
+    <color name="md_blue_A700">#4d69ff</color>
+    <color name="md_blue_grey_100">#cfd8dc</color>
+    <color name="md_blue_grey_200">#b0bec5</color>
+    <color name="md_blue_grey_300">#90a4ae</color>
+    <color name="md_blue_grey_400">#78909c</color>
+    <color name="md_blue_grey_50">#eceff1</color>
+    <color name="md_blue_grey_500">#607d8b</color>
+    <color name="md_blue_grey_600">#546e7a</color>
+    <color name="md_blue_grey_700">#455a64</color>
+    <color name="md_blue_grey_800">#37474f</color>
+    <color name="md_blue_grey_900">#263238</color>
+    <color name="md_brown_100">#d7ccc8</color>
+    <color name="md_brown_200">#bcaaa4</color>
+    <color name="md_brown_300">#a1887f</color>
+    <color name="md_brown_400">#8d6e63</color>
+    <color name="md_brown_50">#efebe9</color>
+    <color name="md_brown_500">#795548</color>
+    <color name="md_brown_600">#6d4c41</color>
+    <color name="md_brown_700">#5d4037</color>
+    <color name="md_brown_800">#4e342e</color>
+    <color name="md_brown_900">#3e2723</color>
+    <color name="md_cyan_100">#b2ebf2</color>
+    <color name="md_cyan_200">#80deea</color>
+    <color name="md_cyan_300">#4dd0e1</color>
+    <color name="md_cyan_400">#26c6da</color>
+    <color name="md_cyan_50">#e0f7fa</color>
+    <color name="md_cyan_500">#00bcd4</color>
+    <color name="md_cyan_600">#00acc1</color>
+    <color name="md_cyan_700">#0097a7</color>
+    <color name="md_cyan_800">#00838f</color>
+    <color name="md_cyan_900">#006064</color>
+    <color name="md_cyan_A100">#84ffff</color>
+    <color name="md_cyan_A200">#18ffff</color>
+    <color name="md_cyan_A400">#00e5ff</color>
+    <color name="md_cyan_A700">#00b8d4</color>
+    <color name="md_deep_orange_100">#ffccbc</color>
+    <color name="md_deep_orange_200">#ffab91</color>
+    <color name="md_deep_orange_300">#ff8a65</color>
+    <color name="md_deep_orange_400">#ff7043</color>
+    <color name="md_deep_orange_50">#fbe9e7</color>
+    <color name="md_deep_orange_500">#ff5722</color>
+    <color name="md_deep_orange_600">#f4511e</color>
+    <color name="md_deep_orange_700">#e64a19</color>
+    <color name="md_deep_orange_800">#d84315</color>
+    <color name="md_deep_orange_900">#bf360c</color>
+    <color name="md_deep_orange_A100">#ff9e80</color>
+    <color name="md_deep_orange_A200">#ff6e40</color>
+    <color name="md_deep_orange_A400">#ff3d00</color>
+    <color name="md_deep_orange_A700">#dd2c00</color>
+    <color name="md_deep_purple_100">#d1c4e9</color>
+    <color name="md_deep_purple_200">#b39ddb</color>
+    <color name="md_deep_purple_300">#9575cd</color>
+    <color name="md_deep_purple_400">#7e57c2</color>
+    <color name="md_deep_purple_50">#ede7f6</color>
+    <color name="md_deep_purple_500">#673ab7</color>
+    <color name="md_deep_purple_600">#5e35b1</color>
+    <color name="md_deep_purple_700">#512da8</color>
+    <color name="md_deep_purple_800">#4527a0</color>
+    <color name="md_deep_purple_900">#311b92</color>
+    <color name="md_deep_purple_A100">#b388ff</color>
+    <color name="md_deep_purple_A200">#7c4dff</color>
+    <color name="md_deep_purple_A400">#651fff</color>
+    <color name="md_deep_purple_A700">#6200ea</color>
+    <color name="md_green_100">#a3e9a4</color>
+    <color name="md_green_200">#72d572</color>
+    <color name="md_green_300">#42bd41</color>
+    <color name="md_green_400">#2baf2b</color>
+    <color name="md_green_50">#d0f8ce</color>
+    <color name="md_green_500">#259b24</color>
+    <color name="md_green_600">#0a8f08</color>
+    <color name="md_green_700">#0a7e07</color>
+    <color name="md_green_800">#056f00</color>
+    <color name="md_green_900">#0d5302</color>
+    <color name="md_green_A100">#a2f78d</color>
+    <color name="md_green_A200">#5af158</color>
+    <color name="md_green_A400">#14e715</color>
+    <color name="md_green_A700">#12c700</color>
+    <color name="md_grey_100">#f5f5f5</color>
+    <color name="md_grey_200">#eeeeee</color>
+    <color name="md_grey_300">#e0e0e0</color>
+    <color name="md_grey_400">#bdbdbd</color>
+    <color name="md_grey_50">#fafafa</color>
+    <color name="md_grey_500">#9e9e9e</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_grey_700">#616161</color>
+    <color name="md_grey_800">#424242</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="md_indigo_100">#c5cae9</color>
+    <color name="md_indigo_200">#9fa8da</color>
+    <color name="md_indigo_300">#7986cb</color>
+    <color name="md_indigo_400">#5c6bc0</color>
+    <color name="md_indigo_50">#e8eaf6</color>
+    <color name="md_indigo_500">#3f51b5</color>
+    <color name="md_indigo_600">#3949ab</color>
+    <color name="md_indigo_700">#303f9f</color>
+    <color name="md_indigo_800">#283593</color>
+    <color name="md_indigo_900">#1a237e</color>
+    <color name="md_indigo_A100">#8c9eff</color>
+    <color name="md_indigo_A200">#536dfe</color>
+    <color name="md_indigo_A400">#3d5afe</color>
+    <color name="md_indigo_A700">#304ffe</color>
+    <color name="md_light_blue_100">#b3e5fc</color>
+    <color name="md_light_blue_200">#81d4fa</color>
+    <color name="md_light_blue_300">#4fc3f7</color>
+    <color name="md_light_blue_400">#29b6f6</color>
+    <color name="md_light_blue_50">#e1f5fe</color>
+    <color name="md_light_blue_500">#03a9f4</color>
+    <color name="md_light_blue_600">#039be5</color>
+    <color name="md_light_blue_700">#0288d1</color>
+    <color name="md_light_blue_800">#0277bd</color>
+    <color name="md_light_blue_900">#01579b</color>
+    <color name="md_light_blue_A100">#80d8ff</color>
+    <color name="md_light_blue_A200">#40c4ff</color>
+    <color name="md_light_blue_A400">#00b0ff</color>
+    <color name="md_light_blue_A700">#0091ea</color>
+    <color name="md_light_green_100">#dcedc8</color>
+    <color name="md_light_green_200">#c5e1a5</color>
+    <color name="md_light_green_300">#aed581</color>
+    <color name="md_light_green_400">#9ccc65</color>
+    <color name="md_light_green_50">#f1f8e9</color>
+    <color name="md_light_green_500">#8bc34a</color>
+    <color name="md_light_green_600">#7cb342</color>
+    <color name="md_light_green_700">#689f38</color>
+    <color name="md_light_green_800">#558b2f</color>
+    <color name="md_light_green_900">#33691e</color>
+    <color name="md_light_green_A100">#ccff90</color>
+    <color name="md_light_green_A200">#b2ff59</color>
+    <color name="md_light_green_A400">#76ff03</color>
+    <color name="md_light_green_A700">#64dd17</color>
+    <color name="md_lime_100">#f0f4c3</color>
+    <color name="md_lime_200">#e6ee9c</color>
+    <color name="md_lime_300">#dce775</color>
+    <color name="md_lime_400">#d4e157</color>
+    <color name="md_lime_50">#f9fbe7</color>
+    <color name="md_lime_500">#cddc39</color>
+    <color name="md_lime_600">#c0ca33</color>
+    <color name="md_lime_700">#afb42b</color>
+    <color name="md_lime_800">#9e9d24</color>
+    <color name="md_lime_900">#827717</color>
+    <color name="md_lime_A100">#f4ff81</color>
+    <color name="md_lime_A200">#eeff41</color>
+    <color name="md_lime_A400">#c6ff00</color>
+    <color name="md_lime_A700">#aeea00</color>
+    <color name="md_orange_100">#ffe0b2</color>
+    <color name="md_orange_200">#ffcc80</color>
+    <color name="md_orange_300">#ffb74d</color>
+    <color name="md_orange_400">#ffa726</color>
+    <color name="md_orange_50">#fff3e0</color>
+    <color name="md_orange_500">#ff9800</color>
+    <color name="md_orange_600">#fb8c00</color>
+    <color name="md_orange_700">#f57c00</color>
+    <color name="md_orange_800">#ef6c00</color>
+    <color name="md_orange_900">#e65100</color>
+    <color name="md_orange_A100">#ffd180</color>
+    <color name="md_orange_A200">#ffab40</color>
+    <color name="md_orange_A400">#ff9100</color>
+    <color name="md_orange_A700">#ff6d00</color>
+    <color name="md_pink_100">#f8bbd0</color>
+    <color name="md_pink_200">#f48fb1</color>
+    <color name="md_pink_300">#f06292</color>
+    <color name="md_pink_400">#ec407a</color>
+    <color name="md_pink_50">#fce4ec</color>
+    <color name="md_pink_500">#e91e63</color>
+    <color name="md_pink_600">#d81b60</color>
+    <color name="md_pink_700">#c2185b</color>
+    <color name="md_pink_800">#ad1457</color>
+    <color name="md_pink_900">#880e4f</color>
+    <color name="md_pink_A100">#ff80ab</color>
+    <color name="md_pink_A200">#ff4081</color>
+    <color name="md_pink_A400">#f50057</color>
+    <color name="md_pink_A700">#c51162</color>
+    <color name="md_purple_100">#e1bee7</color>
+    <color name="md_purple_200">#ce93d8</color>
+    <color name="md_purple_300">#ba68c8</color>
+    <color name="md_purple_400">#ab47bc</color>
+    <color name="md_purple_50">#f3e5f5</color>
+    <color name="md_purple_500">#9c27b0</color>
+    <color name="md_purple_600">#8e24aa</color>
+    <color name="md_purple_700">#7b1fa2</color>
+    <color name="md_purple_800">#6a1b9a</color>
+    <color name="md_purple_900">#4a148c</color>
+    <color name="md_purple_A100">#ea80fc</color>
+    <color name="md_purple_A200">#e040fb</color>
+    <color name="md_purple_A400">#d500f9</color>
+    <color name="md_purple_A700">#aa00ff</color>
+    <color name="md_red_100">#f9bdbb</color>
+    <color name="md_red_200">#f69988</color>
+    <color name="md_red_300">#f36c60</color>
+    <color name="md_red_400">#e84e40</color>
+    <color name="md_red_50">#fde0dc</color>
+    <color name="md_red_500">#e51c23</color>
+    <color name="md_red_600">#dd191d</color>
+    <color name="md_red_700">#d01716</color>
+    <color name="md_red_800">#c41411</color>
+    <color name="md_red_900">#b0120a</color>
+    <color name="md_red_A100">#ff7997</color>
+    <color name="md_red_A200">#ff5177</color>
+    <color name="md_red_A400">#ff2d6f</color>
+    <color name="md_red_A700">#e00032</color>
+    <color name="md_teal_100">#b2dfdb</color>
+    <color name="md_teal_200">#80cbc4</color>
+    <color name="md_teal_300">#4db6ac</color>
+    <color name="md_teal_400">#26a69a</color>
+    <color name="md_teal_50">#e0f2f1</color>
+    <color name="md_teal_500">#009688</color>
+    <color name="md_teal_600">#00897b</color>
+    <color name="md_teal_700">#00796b</color>
+    <color name="md_teal_800">#00695c</color>
+    <color name="md_teal_900">#004d40</color>
+    <color name="md_teal_A100">#a7ffeb</color>
+    <color name="md_teal_A200">#64ffda</color>
+    <color name="md_teal_A400">#1de9b6</color>
+    <color name="md_teal_A700">#00bfa5</color>
+    <color name="md_white_1000">#ffffff</color>
+    <color name="md_yellow_100">#fff9c4</color>
+    <color name="md_yellow_200">#fff59d</color>
+    <color name="md_yellow_300">#fff176</color>
+    <color name="md_yellow_400">#ffee58</color>
+    <color name="md_yellow_50">#fffde7</color>
+    <color name="md_yellow_500">#ffeb3b</color>
+    <color name="md_yellow_600">#fdd835</color>
+    <color name="md_yellow_700">#fbc02d</color>
+    <color name="md_yellow_800">#f9a825</color>
+    <color name="md_yellow_900">#f57f17</color>
+    <color name="md_yellow_A100">#ffff8d</color>
+    <color name="md_yellow_A200">#ffff00</color>
+    <color name="md_yellow_A400">#ffea00</color>
+    <color name="md_yellow_A700">#ffd600</color>
+    <color name="msg_chat_bg">#eceff4</color>
+    <color name="msg_emote_divider">#ffa1a1a1</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="text_gray">#969696</color>
+    <color name="theme_bg_color">#f0f2f5</color>
+    <color name="transparent">#00000000</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <declare-styleable name="CardView"><attr format="color" name="cardBackgroundColor"/><attr format="dimension" name="cardCornerRadius"/><attr format="dimension" name="cardElevation"/><attr format="dimension" name="cardMaxElevation"/><attr format="boolean" name="cardUseCompatPadding"/><attr format="boolean" name="cardPreventCornerOverlap"/><attr format="dimension" name="contentPadding"/><attr format="dimension" name="contentPaddingLeft"/><attr format="dimension" name="contentPaddingRight"/><attr format="dimension" name="contentPaddingTop"/><attr format="dimension" name="contentPaddingBottom"/></declare-styleable>
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="CircularProgress"><attr format="dimension" name="borderWidth"/></declare-styleable>
+    <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="PtrClassicHeader"><attr format="integer" name="ptr_rotate_ani_time"/></declare-styleable>
+    <declare-styleable name="PtrFrameLayout"><attr format="reference" name="ptr_header"/><attr format="reference" name="ptr_content"/><attr format="float" name="ptr_resistance"/><attr format="float" name="ptr_ratio_of_header_height_to_refresh"/><attr format="integer" name="ptr_duration_to_close"/><attr format="integer" name="ptr_duration_to_close_header"/><attr format="boolean" name="ptr_pull_to_fresh"/><attr format="boolean" name="ptr_keep_header_when_refresh"/></declare-styleable>
+    <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle"><enum name="none" value="0"/><enum name="triangle" value="1"/><enum name="underline" value="2"/></attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition"><enum name="bottom" value="0"/><enum name="top" value="1"/></attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="base_action_bar_height">48.0dip</dimen>
+    <dimen name="base_action_bar_title_size">22.0sp</dimen>
+    <dimen name="base_line_width">0.5dip</dimen>
+    <dimen name="base_line_width_1">1dip</dimen>
+    <dimen name="base_line_width_2">2dip</dimen>
+    <dimen name="base_scrollview_top_height">50.0dip</dimen>
+    <dimen name="cardview_compat_inset_shadow">1dp</dimen>
+    <dimen name="cardview_default_elevation">2dp</dimen>
+    <dimen name="cardview_default_radius">2dp</dimen>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <dimen name="margin_chat_top">5.0dip</dimen>
+    <dimen name="message_top_height">70.0dip</dimen>
+    <dimen name="register_margin">10.0dp</dimen>
+    <dimen name="score_item_height">100.0dip</dimen>
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_padding_left_right">40dp</dimen>
+    <dimen name="tab_padding_top_bottom">15dp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="time_line_content_left_margin">52.0dip</dimen>
+    <dimen name="time_line_content_right_margin">7.0dip</dimen>
+    <dimen name="time_line_line_left_margin">24dip</dimen>
+    <dimen name="time_line_line_width">2.0dip</dimen>
+    <item name="item_touch_helper_previous_elevation" type="id"/>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <string name="action_settings">Settings</string>
+    <string name="add_avator">头像</string>
+    <string name="add_friend">添加好友</string>
+    <string name="add_gender">性别</string>
+    <string name="add_name">账号</string>
+    <string name="add_name_hint">请输入昵称…</string>
+    <string name="add_nick">昵称</string>
+    <string name="app_name">三生石</string>
+    <string name="black_tips">已添加至黑名单，你将不再收到对方的消息!</string>
+    <string name="blacklist">黑名单</string>
+    <string name="camera">拍摄</string>
+    <string name="chat">发起会话</string>
+    <string name="cube_ptr_hours_ago"> hours ago</string>
+    <string name="cube_ptr_last_update">last update: </string>
+    <string name="cube_ptr_minutes_ago"> minutes ago</string>
+    <string name="cube_ptr_pull_down">Pull Down</string>
+    <string name="cube_ptr_pull_down_to_refresh">Pull Down to Refresh</string>
+    <string name="cube_ptr_refresh_complete">Updated.</string>
+    <string name="cube_ptr_refreshing">Updating...</string>
+    <string name="cube_ptr_release_to_refresh">Release To Refresh</string>
+    <string name="cube_ptr_seconds_ago"> seconds ago</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loading">正在加载...</string>
+    <string name="location">位置</string>
+    <string name="login">登录</string>
+    <string name="login_account">账号 </string>
+    <string name="login_email">确认密码 </string>
+    <string name="login_email_hint">请在此输入密码…</string>
+    <string name="login_password_hint">请输入密码…</string>
+    <string name="login_pwd">密码 </string>
+    <string name="login_username_hint">请输入用户名…</string>
+    <string name="logout">退出登陆</string>
+    <string name="longclick_speak">长按说话</string>
+    <string name="main_tab_contact">联系人</string>
+    <string name="main_tab_recent">会话</string>
+    <string name="message_search_hint">搜索…</string>
+    <string name="mian_tab_set">设置</string>
+    <string name="near_people">附近的人</string>
+    <string name="network_tips">当前网络不可用,请检查您的网络!</string>
+    <string name="new_friends">新朋友</string>
+    <string name="picture">照片</string>
+    <string name="pop_choose">从手机相册选中</string>
+    <string name="pop_photo">拍照</string>
+    <string name="register">注册</string>
+    <string name="register_txt1">还没有账号？</string>
+    <string name="register_txt2">立即注册 ></string>
+    <string name="search">搜索</string>
+    <string name="send_state">已读</string>
+    <string name="set_blacklist">黑名单</string>
+    <string name="set_myinfo">个人资料</string>
+    <string name="set_notify">接收新消息通知</string>
+    <string name="set_vibrate">震动</string>
+    <string name="set_voice">声音</string>
+    <string name="show_notice">\t\t\t\t\t自V1.0.6版本开始，应用源码中将不再公开ApplicationId,开发者请自行到官网申请。\n\t\t\t\t\t申请成功之后在应用程序启动页(SplashActivity)进行初始化操作!</string>
+    <string name="tips">提示</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="title_activity_new_main">NewMainActivity</string>
+    <string name="toast_error_comfirm_password">输入的两次密码不一致</string>
+    <string name="toast_error_password_null">密码不能为空</string>
+    <string name="toast_error_username_null">用户名不能为空</string>
+    <string name="username">用户名</string>
+    <string name="voice_cancel_tips">松开手指，取消发送</string>
+    <string name="voice_seconds_tips">还可以说%1$s秒</string>
+    <string name="voice_short_tips">录音时间太短</string>
+    <string name="voice_up_tips">手指上滑,取消发送</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">正在加载…</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <style name="ActionBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/global_pink</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/base_action_bar_height</item>
+    </style>
+    <style name="ActionBarTitle">
+        <item name="android:textSize">@dimen/base_action_bar_title_size</item>
+        <item name="android:textColor">@color/base_color_text_white</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">1.0dip</item>
+    </style>
+    <style name="Animations"/>
+    <style name="Animations.GrowFromBottom">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/md_grey_900</item>
+
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+    </style>
+    <style name="CardView">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+        <item name="cardMaxElevation">@dimen/cardview_default_elevation</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
+    <style name="CardView.Dark">
+        <item name="cardBackgroundColor">@color/cardview_dark_background</item>
+    </style>
+    <style name="CardView.Light">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <style name="CustomLinePageIndicator">
+        <item name="strokeWidth">4dp</item>
+        <item name="lineWidth">30dp</item>
+        <item name="unselectedColor">@color/md_grey_500</item>
+        <item name="selectedColor">@color/md_grey_500</item>
+    </style>
+    <style name="CustomTabPageIndicator" parent="TabPageIndicator">
+        <item name="android:textColor">@color/tab_indicator_text_selector</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:divider">@color/md_grey_500</item>
+        <item name="android:dividerPadding">4dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">22dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+    <style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.DialogWindowTitle</item>
+    </style>
+    <style name="Register_Edit">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginLeft">@dimen/register_margin</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <style name="Register_Input">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/base_edit_input</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_action_bar_height</item>
+        <item name="android:layout_marginTop">@dimen/register_margin</item>
+        <item name="android:layout_marginLeft">@dimen/register_margin</item>
+        <item name="android:layout_marginRight">@dimen/register_margin</item>
+    </style>
+    <style name="Smile">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Smile.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_action_bar_height</item>
+    </style>
+    <style name="Smile.Button.logout" parent="Smile.TextView._White">
+        <item name="android:background">@drawable/btn_logout_selector</item>
+    </style>
+    <style name="Smile.Button.theme" parent="Smile.TextView._White">
+        <item name="android:background">@drawable/btn_login_selector</item>
+    </style>
+    <style name="Smile.ImageView">
+        <item name="android:contentDescription">@string/app_name</item>
+    </style>
+    <style name="Smile.ImageView.Photo_Large">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="Smile.ImageView.Photo_Middle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="Smile.ImageView.Photo_Small">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="Smile.TextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Smile.TextView._Black">
+        <item name="android:textColor">@color/base_color_text_black</item>
+    </style>
+    <style name="Smile.TextView._Gray">
+        <item name="android:textColor">@color/base_color_text_gray</item>
+    </style>
+    <style name="Smile.TextView._Orange">
+        <item name="android:textColor">@color/dialog_color_title</item>
+    </style>
+    <style name="Smile.TextView._White">
+        <item name="android:textColor">@color/base_color_text_white</item>
+    </style>
+    <style name="Smile.View_margin">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="TextAppearance">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHighlight">#FFFFFF</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+        <item name="android:textColorLink">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.DialogWindowTitle">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__dark_theme</item>
+    </style>
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    <style name="Widget">
+    </style>
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="blog_item_count_icon">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+    <style name="blog_item_count_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:textColor">@color/base_color_text_white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/chat_time_block</item>
+    </style>
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

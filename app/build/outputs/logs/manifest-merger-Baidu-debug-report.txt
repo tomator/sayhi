@@ -1,0 +1,328 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:2:1-150:12
+	package
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:3:5-32
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+	android:sharedUserId
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:4:5-39
+	android:versionName
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-v4:23.1.0] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.viewpagerindicator:viewPagerIndicator-release:] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/AndroidManifest.xml:7:5-9:41
+MERGED from [in.srain.cube:ultra-ptr:1.0.10] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.10/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:cardview-v7:23.1.0] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.0] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:8:9-38
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:7:9-35
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:10:5-15:39
+	android:largeScreens
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:12:9-36
+	android:smallScreens
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:15:9-36
+	android:normalScreens
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:13:9-38
+	android:resizeable
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:14:9-34
+	android:anyDensity
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:11:9-34
+uses-permission#android.permission.INTERNET
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:18:5-67
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:18:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:20:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:21:5-75
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:21:22-72
+uses-permission#android.permission.READ_LOGS
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:22:5-68
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:22:22-65
+permission#cn.bmob.permission.push
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:24:5-26:44
+	android:protectionLevel
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:26:9-41
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:25:9-47
+uses-permission#cn.bmob.permission.push
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:28:5-63
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:28:22-60
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:31:22-81
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:33:5-66
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:33:22-63
+uses-permission#android.permission.BAIDU_LOCATION_SERVICE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:35:5-81
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:35:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:36:5-68
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:36:22-65
+uses-permission#android.permission.ACCESS_GPS
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:37:5-69
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:37:22-66
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:39:5-68
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:39:22-65
+uses-permission#android.permission.CAMERA
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:40:5-65
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:40:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:41:5-71
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:41:22-68
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:43:5-75
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:43:22-72
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:44:5-73
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:44:22-70
+uses-permission#android.permission.PROCESS_OUTGOING_CALLS
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:46:5-81
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:46:22-78
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:47:5-80
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:47:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:48:5-81
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:48:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:49:5-79
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:49:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:50:5-76
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:50:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:52:5-79
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:52:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:53:5-80
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:53:22-77
+application
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:55:5-148:19
+MERGED from [com.android.support:support-v4:23.1.0] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
+MERGED from [in.srain.cube:ultra-ptr:1.0.10] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.10/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:cardview-v7:23.1.0] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] /Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:59:9-41
+	android:allowBackup
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:57:9-35
+	android:icon
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:58:9-38
+	android:theme
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:60:9-40
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:56:9-28
+meta-data#UMENG_APPKEY
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:61:9-63:56
+	android:value
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:63:13-53
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:62:13-40
+meta-data#UMENG_CHANNEL
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:64:9-66:54
+	android:value
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:66:13-51
+		INJECTED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:65:13-41
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:68:9-70:56
+	android:value
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:70:13-53
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:69:13-52
+service#com.baidu.location.f
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:72:9-79:19
+	android:enabled
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:74:13-35
+	android:process
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:75:13-38
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:73:13-48
+intent-filter#com.baidu.location.service_v2.2
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:76:13-78:29
+action#com.baidu.location.service_v2.2
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:77:17-74
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:77:25-71
+service#cn.bmob.push.lib.service.PushService
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:80:9-89:19
+	android:process
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:85:13-43
+	android:label
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:83:13-40
+	android:exported
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:82:13-36
+	android:permission
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:84:13-57
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:81:13-64
+intent-filter#cn.bmob.push.lib.service.PushService
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:86:13-88:29
+action#cn.bmob.push.lib.service.PushService
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:87:17-79
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:87:25-76
+receiver#cn.bmob.push.PushReceiver
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:91:9-98:20
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:91:19-59
+intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:92:13-97:29
+	android:priority
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:92:28-57
+action#android.intent.action.USER_PRESENT
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:94:17-77
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:94:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:96:17-79
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:96:25-76
+receiver#xyz.iseeyou.sayhi.MyMessageReceiver
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:99:9-103:20
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:99:19-52
+intent-filter#cn.bmob.push.action.MESSAGE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:100:13-102:29
+action#cn.bmob.push.action.MESSAGE
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:101:17-70
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:101:25-67
+service#cn.bmob.im.poll.BmobPollService
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:106:9-110:19
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:106:18-64
+intent-filter#cn.bmob.im.service.BmobPollService
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:107:13-109:29
+action#cn.bmob.im.service.BmobPollService
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:108:17-77
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:108:25-74
+activity#xyz.iseeyou.sayhi.ui.LaunchActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:112:9-120:20
+	android:label
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:114:13-45
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:113:13-46
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:115:13-119:29
+action#android.intent.action.MAIN
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:116:17-69
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:116:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:118:17-77
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:118:27-74
+activity#xyz.iseeyou.sayhi.ui.MainActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:121:9-124:73
+	android:launchMode
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:123:13-44
+	android:windowSoftInputMode
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:124:13-70
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:122:13-44
+activity#xyz.iseeyou.sayhi.ui.LoginActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:125:9-54
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:125:19-51
+activity#xyz.iseeyou.sayhi.ui.LocationActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:126:9-57
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:126:19-54
+activity#xyz.iseeyou.sayhi.ui.BlackListActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:127:9-58
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:127:19-55
+activity#xyz.iseeyou.sayhi.ui.ImageBrowserActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:128:9-61
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:128:19-58
+activity#xyz.iseeyou.sayhi.ui.AddFriendActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:129:9-131:67
+	android:windowSoftInputMode
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:131:13-64
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:130:13-49
+activity#xyz.iseeyou.sayhi.ui.NewFriendActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:132:9-58
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:132:19-55
+activity#xyz.iseeyou.sayhi.ui.NearPeopleActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:133:9-59
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:133:19-56
+activity#xyz.iseeyou.sayhi.ui.UpdateInfoActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:134:9-59
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:134:19-56
+activity#xyz.iseeyou.sayhi.ui.ChatActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:135:9-137:76
+	android:windowSoftInputMode
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:137:13-73
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:136:13-44
+activity#xyz.iseeyou.sayhi.ui.SetMyInfoActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:138:9-58
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:138:19-55
+activity#xyz.iseeyou.sayhi.ui.RegisterActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:139:9-141:48
+	android:label
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:141:13-45
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:140:13-48
+activity#xyz.iseeyou.sayhi.ui.NewMainActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:142:9-144:63
+	android:label
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:144:13-60
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:143:13-47
+activity#xyz.iseeyou.sayhi.ui.MainTabActivity
+ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:145:9-147:72
+	android:label
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:147:13-60
+	android:name
+		ADDED from /Users/bici/AndroidStudioProjects/sayhi/app/src/main/AndroidManifest.xml:146:13-47

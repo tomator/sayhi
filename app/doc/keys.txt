@@ -1,0 +1,4 @@
+alias:  android.keystore
+pass:	jiang7637
+SHA1:   DC:94:D9:0E:5A:08:43:82:72:96:0D:F5:ED:88:D9:C1:CC:DA:23:22
+

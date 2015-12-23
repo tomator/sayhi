@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.iseeyou.sayhi"
+    android:sharedUserId="xyz.iseeyou">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- normal permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用打开网络套接口 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- Push SDK权限 -->
+    <permission
+        android:name="cn.bmob.permission.push"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="cn.bmob.permission.push" />
+    <!-- 添加自定义的权限 -->
+    <!-- UIL框架所需的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 通知震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- baidumap 所需的权限 -start -->
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5662d075e0f55a6f35000898" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <!-- baidu map -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="AeP8LfRcFkSgW8TVMMsl0B3i" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="cn.bmob.push.lib.service.PushService"
+            android:exported="true"
+            android:label="PushService"
+            android:permission="cn.bmob.permission.push"
+            android:process="cn.bmob.push">
+            <intent-filter>
+                <action android:name="cn.bmob.push.lib.service.PushService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="cn.bmob.push.PushReceiver">
+            <intent-filter android:priority="2147483647"> <!-- 优先级加最高 -->
+                <!-- 解锁完成后会调用 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 监听网络连通性 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MyMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.bmob.push.action.MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 启动定时检测操作 -->
+        <service android:name="cn.bmob.im.poll.BmobPollService">
+            <intent-filter>
+                <action android:name="cn.bmob.im.service.BmobPollService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.LaunchActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.LocationActivity" />
+        <activity android:name=".ui.BlackListActivity" />
+        <activity android:name=".ui.ImageBrowserActivity" />
+        <activity
+            android:name=".ui.AddFriendActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.NewFriendActivity" />
+        <activity android:name=".ui.NearPeopleActivity" />
+        <activity android:name=".ui.UpdateInfoActivity" />
+        <activity
+            android:name=".ui.ChatActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".ui.SetMyInfoActivity" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ui.NewMainActivity"
+            android:label="@string/title_activity_new_main" />
+        <activity
+            android:name=".ui.MainTabActivity"
+            android:label="@string/title_activity_main_tab"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/tab_indicator_text_selector.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/color/tab_indicator_text_selector.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/vpi__light_theme.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/color/vpi__light_theme.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/vpi__dark_theme.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/color/vpi__dark_theme.xml"
+    }
+]

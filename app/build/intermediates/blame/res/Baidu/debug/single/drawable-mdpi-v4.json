@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable-mdpi-v4/vpi__tab_unselected_focused_holo.9.png",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/drawable-mdpi-v4/vpi__tab_unselected_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable-mdpi-v4/vpi__tab_unselected_pressed_holo.9.png",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/drawable-mdpi-v4/vpi__tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable-mdpi-v4/vpi__tab_unselected_holo.9.png",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/drawable-mdpi-v4/vpi__tab_unselected_holo.9.png"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable-mdpi-v4/vpi__tab_selected_holo.9.png",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/drawable-mdpi-v4/vpi__tab_selected_holo.9.png"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable-mdpi-v4/vpi__tab_selected_pressed_holo.9.png",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/drawable-mdpi-v4/vpi__tab_selected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable-mdpi-v4/vpi__tab_selected_focused_holo.9.png",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/drawable-mdpi-v4/vpi__tab_selected_focused_holo.9.png"
+    }
+]

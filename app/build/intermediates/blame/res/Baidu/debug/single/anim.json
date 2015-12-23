@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/anim/shrink_from_top.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/anim/shrink_from_top.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/anim/grow_from_bottom.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/anim/grow_from_bottom.xml"
+    }
+]
