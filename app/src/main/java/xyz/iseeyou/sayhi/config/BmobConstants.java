@@ -16,12 +16,12 @@ public class BmobConstants {
 	/**
 	 * 存放发送图片的目录
 	 */
-	public static String BMOB_PICTURE_PATH = Environment.getExternalStorageDirectory()	+ "/bmobimdemo/image/";
+	public static String BMOB_PICTURE_PATH = Environment.getExternalStorageDirectory()	+ "/sayhi/image/";
 	
 	/**
 	 * 我的头像保存目录
 	 */
-	public static String MyAvatarDir = "/sdcard/bmobimdemo/avatar/";
+	public static String MyAvatarDir = "/sdcard/sayhi/avatar/";
 	/**
 	 * 拍照回调
 	 */

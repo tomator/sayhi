@@ -3,131 +3,163 @@ package xyz.iseeyou.sayhi.bean;
 import java.util.List;
 
 import cn.bmob.im.bean.BmobChatUser;
-import cn.bmob.v3.datatype.BmobDate;
 import cn.bmob.v3.datatype.BmobFile;
 import cn.bmob.v3.datatype.BmobGeoPoint;
 import cn.bmob.v3.datatype.BmobRelation;
 
-/** 重载BmobChatUser对象：若还有其他需要增加的属性可在此添加
-  * @ClassName: TextUser
-  * @Description: TODO
-  * @author smile
-  * @date 2014-5-29 下午6:15:45
-  */
-public class User extends BmobChatUser {
-	private static final long serialVersionUID = 1L;
+/**
+ * 重载BmobChatUser对象：若还有其他需要增加的属性可在此添加
+ *
+ * @author smile
+ * @ClassName: TextUser
+ * @Description: TODO
+ * @date 2014-5-29 下午6:15:45
+ */
+public class User extends BmobChatUser implements Comparable {
+    private static final long serialVersionUID = 1L;
 
-	private BmobRelation blogs;
-	private String sortLetters;
+    private BmobRelation blogs;
+    private String sortLetters;
 
-	/**
-	 * 个人可以设置的信息
-	 */
-	private Boolean sex;
-	private BmobGeoPoint location;
-	private Integer hight;
-	private Integer weight;
-	private BmobDate birthday;
-	private List<BmobFile> avatars;
-	private String city;
-	private String hobby;
-	private String description;
-	private Integer rank;
-	private Integer report;
+    /**
+     * 个人可以设置的信息
+     */
+    private Boolean sex;
+    private BmobGeoPoint location;
+    private Integer hight;
+    private Integer weight;
+    private long birthday;
+    private List<BmobFile> avatars;
+    private String city;
+    private String hobby;
+    private String description;
+    private Integer rank;
+    private Integer report;
+    private long onlineTime;
 
-	public Integer getRank() {
-		return rank;
-	}
+    @Override
+    public int compareTo(Object another) {
+        if(another instanceof User){
+            User other = (User)another;
+            if(other.getObjectId().equals(getObjectId())){
+                return 0;
+            }else {
 
-	public void setRank(Integer rank) {
-		this.rank = rank;
-	}
+            }
+        }
+        return -1;
+    }
 
-	public Integer getReport() {
-		return report;
-	}
+    public long getOnlineTime() {
+        return onlineTime;
+    }
 
-	public void setReport(Integer report) {
-		this.report = report;
-	}
+    public void setOnlineTime(long onlineTime) {
+        this.onlineTime = onlineTime;
+    }
 
-	public Integer getWeight() {
-		return weight;
-	}
+    public Integer getRank() {
+        return rank;
+    }
 
-	public void setWeight(Integer weight) {
-		this.weight = weight;
-	}
+    public void setRank(Integer rank) {
+        this.rank = rank;
+    }
 
-	public BmobDate getBirthday() {
-		return birthday;
-	}
+    public Integer getReport() {
+        return report;
+    }
 
-	public void setBirthday(BmobDate birthday) {
-		this.birthday = birthday;
-	}
+    public void setReport(Integer report) {
+        this.report = report;
+    }
 
-	public List<BmobFile> getAvatars() {
-		return avatars;
-	}
+    public Integer getWeight() {
+        return weight;
+    }
 
-	public void setAvatars(List<BmobFile> avatars) {
-		this.avatars = avatars;
-	}
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
 
-	public String getCity() {
-		return city;
-	}
+    public long getBirthday() {
+        return birthday;
+    }
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    public void setBirthday(long birthday) {
+        this.birthday = birthday;
+    }
 
-	public String getHobby() {
-		return hobby;
-	}
+    public List<BmobFile> getAvatars() {
+        return avatars;
+    }
 
-	public void setHobby(String hobby) {
-		this.hobby = hobby;
-	}
+    public void setAvatars(List<BmobFile> avatars) {
+        this.avatars = avatars;
+    }
 
-	public String getDescription() {
-		return description;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	public Integer getHight() {
-		return hight;
-	}
-	public void setHight(Integer hight) {
-		this.hight = hight;
-	}
-	public BmobRelation getBlogs() {
-		return blogs;
-	}
-	public void setBlogs(BmobRelation blogs) {
-		this.blogs = blogs;
-	}
-	public BmobGeoPoint getLocation() {
-		return location;
-	}
-	public void setLocation(BmobGeoPoint location) {
-		this.location = location;
-	}
-	public Boolean getSex() {
-		return sex;
-	}
-	public void setSex(Boolean sex) {
-		this.sex = sex;
-	}
-	public String getSortLetters() {
-		return sortLetters;
-	}
-	public void setSortLetters(String sortLetters) {
-		this.sortLetters = sortLetters;
-	}
-	
+    public String getHobby() {
+        return hobby;
+    }
+
+    public void setHobby(String hobby) {
+        this.hobby = hobby;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Integer getHight() {
+        return hight;
+    }
+
+    public void setHight(Integer hight) {
+        this.hight = hight;
+    }
+
+    public BmobRelation getBlogs() {
+        return blogs;
+    }
+
+    public void setBlogs(BmobRelation blogs) {
+        this.blogs = blogs;
+    }
+
+    public BmobGeoPoint getLocation() {
+        return location;
+    }
+
+    public void setLocation(BmobGeoPoint location) {
+        this.location = location;
+    }
+
+    public Boolean getSex() {
+        return sex;
+    }
+
+    public void setSex(Boolean sex) {
+        this.sex = sex;
+    }
+
+    public String getSortLetters() {
+        return sortLetters;
+    }
+
+    public void setSortLetters(String sortLetters) {
+        this.sortLetters = sortLetters;
+    }
+
 }

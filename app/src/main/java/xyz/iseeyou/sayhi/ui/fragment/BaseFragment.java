@@ -4,22 +4,19 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
 import android.support.v4.app.Fragment;
 
 import com.umeng.analytics.MobclickAgent;
 
-import xyz.iseeyou.sayhi.R;
-import xyz.iseeyou.sayhi.util.Constants;
 import xyz.iseeyou.sayhi.util.Log;
-import xyz.iseeyou.sayhi.view.MyProgressDialog;
+import xyz.iseeyou.sayhi.view.LoadingDialog;
 
 /**
  * Created by storm on 14-3-25.
  */
 public abstract class BaseFragment extends Fragment {
     public static final String TAG = "fragmentLife";
-    protected MyProgressDialog progressDialog;
+    protected LoadingDialog progressDialog;
     private Handler handler = new Handler();
 
     @Override
@@ -86,23 +83,14 @@ public abstract class BaseFragment extends Fragment {
     }
 
     public void showMyProgressDialog(){
-        showMyProgressDialog(getString(R.string.loading));
-    }
-
-    public void showMyProgressDialog(@StringRes int res){
-        showMyProgressDialog(getString(res));
-    }
-
-    public void showMyProgressDialog(final String content){
-        Log.d(Constants.TAG, getClass() + " showMyProgressDialog ====== " + progressDialog + " , " + content);
         if(progressDialog == null){
-            progressDialog = new MyProgressDialog(getActivity());
+            progressDialog = new LoadingDialog(getActivity());
         }
         handler.post(new Runnable() {
             @Override
             public void run() {
                 try {
-                    progressDialog.show(content);
+                    progressDialog.show();
                 } catch (Exception e) {
                 }
             }
@@ -111,7 +99,6 @@ public abstract class BaseFragment extends Fragment {
     }
 
     public void closeMyProgressDialog(){
-        Log.d(Constants.TAG, getClass() + " closeMyProgressDialog ====== " + progressDialog);
         handler.post(new Runnable() {
             @Override
             public void run() {

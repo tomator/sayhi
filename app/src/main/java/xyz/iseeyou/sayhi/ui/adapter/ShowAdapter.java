@@ -16,8 +16,8 @@
 
 package xyz.iseeyou.sayhi.ui.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +32,7 @@ import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import xyz.iseeyou.sayhi.R;
+import xyz.iseeyou.sayhi.ui.ActivityBase;
 import xyz.iseeyou.sayhi.ui.NewMainActivity;
 import xyz.iseeyou.sayhi.util.DensityUtil;
 
@@ -40,6 +41,7 @@ import xyz.iseeyou.sayhi.util.DensityUtil;
  */
 public class ShowAdapter extends RecyclerView.Adapter<ShowAdapter.ViewHolder> {
     private static final String TAG = "CustomAdapter";
+    private Context context;
     private DisplayImageOptions options = new DisplayImageOptions.Builder()
             .showImageOnLoading(R.drawable.blog_default)
             .showImageForEmptyUri(R.drawable.blog_default)
@@ -52,7 +54,7 @@ public class ShowAdapter extends RecyclerView.Adapter<ShowAdapter.ViewHolder> {
     /**
      * Provide a reference to the type of views that you are using (custom ViewHolder)
      */
-    static class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
         @InjectView(R.id.avatarView)
         ImageView avatarView;
         @InjectView(R.id.nameView)
@@ -71,13 +73,16 @@ public class ShowAdapter extends RecyclerView.Adapter<ShowAdapter.ViewHolder> {
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d(TAG, "Element " + getLayoutPosition() + " clicked.");
+                    if(context instanceof ActivityBase){
+                        ((ActivityBase)context).showLoadingDialog();
+                    }
                 }
             });
         }
     }
 
-    public ShowAdapter() {
+    public ShowAdapter(Context context) {
+        this.context = context;
     }
 
 

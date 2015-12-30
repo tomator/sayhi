@@ -4,7 +4,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -26,6 +27,7 @@ import xyz.iseeyou.sayhi.view.HeaderLayout;
 import xyz.iseeyou.sayhi.view.HeaderLayout.HeaderStyle;
 import xyz.iseeyou.sayhi.view.HeaderLayout.onLeftImageButtonClickListener;
 import xyz.iseeyou.sayhi.view.HeaderLayout.onRightImageButtonClickListener;
+import xyz.iseeyou.sayhi.view.LoadingDialog;
 import xyz.iseeyou.sayhi.view.dialog.DialogTips;
 
 /** 基类
@@ -34,7 +36,7 @@ import xyz.iseeyou.sayhi.view.dialog.DialogTips;
   * @author smile
   * @date 2014-6-13 下午5:05:38
   */
-public class BaseActivity extends FragmentActivity {
+public class BaseActivity extends AppCompatActivity {
 
 	BmobUserManager userManager;
 	BmobChatManager manager;
@@ -44,6 +46,7 @@ public class BaseActivity extends FragmentActivity {
 	
 	protected int mScreenWidth;
 	protected int mScreenHeight;
+	private Handler handler = new Handler();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -129,7 +132,7 @@ public class BaseActivity extends FragmentActivity {
 		mHeaderLayout.setTitleAndLeftImageButton(titleName,
 				R.drawable.base_action_bar_back_bg_selector,
 				new OnLeftButtonClickListener());
-		mHeaderLayout.setTitleAndRightButton(titleName, rightDrawableId,text,
+		mHeaderLayout.setTitleAndRightButton(titleName, rightDrawableId, text,
 				listener);
 	}
 	
@@ -209,23 +212,23 @@ public class BaseActivity extends FragmentActivity {
 		//这里默认采取的是登陆成功之后即将好于列表存储到数据库中，并更新到当前内存中,
 		userManager.queryCurrentContactList(new FindListener<BmobChatUser>() {
 
-					@Override
-					public void onError(int arg0, String arg1) {
-						// TODO Auto-generated method stub
-						if(arg0==BmobConfig.CODE_COMMON_NONE){
-							ShowLog(arg1);
-						}else{
-							ShowLog("查询好友列表失败："+arg1);
-						}
-					}
+			@Override
+			public void onError(int arg0, String arg1) {
+				// TODO Auto-generated method stub
+				if (arg0 == BmobConfig.CODE_COMMON_NONE) {
+					ShowLog(arg1);
+				} else {
+					ShowLog("查询好友列表失败：" + arg1);
+				}
+			}
 
-					@Override
-					public void onSuccess(List<BmobChatUser> arg0) {
-						// TODO Auto-generated method stub
-						// 保存到application中方便比较
-						App.getInstance().setContactList(CollectionUtils.list2map(arg0));
-					}
-				});
+			@Override
+			public void onSuccess(List<BmobChatUser> arg0) {
+				// TODO Auto-generated method stub
+				// 保存到application中方便比较
+				App.getInstance().setContactList(CollectionUtils.list2map(arg0));
+			}
+		});
 	}
 	
 	/** 更新用户的经纬度信息
@@ -266,5 +269,36 @@ public class BaseActivity extends FragmentActivity {
 //				ShowLog("用户位置未发生过变化");
 			}
 		}
+	}
+
+	private LoadingDialog loadingDialog;
+	public void showLoadingDialog(){
+		if(loadingDialog == null){
+			loadingDialog = new LoadingDialog(this);
+		}
+		runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					loadingDialog.show();
+				} catch (Exception e) {
+				}
+			}
+		});
+	}
+
+	public void closeLoadingDialog(){
+		handler.postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				if (loadingDialog != null) {
+					try {
+						loadingDialog.dismiss();
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}, 500);
 	}
 }

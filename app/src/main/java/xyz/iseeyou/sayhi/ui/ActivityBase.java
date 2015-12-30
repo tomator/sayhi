@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
+
 import cn.bmob.im.BmobUserManager;
 
 /** 除登陆注册和欢迎页面外继承的基类-用于检测是否有其他设备登录了同一账号
@@ -54,5 +55,6 @@ public class ActivityBase extends BaseActivity {
 				manager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 		}
 	}
+
 	
 }

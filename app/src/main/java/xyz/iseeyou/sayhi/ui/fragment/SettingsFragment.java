@@ -11,14 +11,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import cn.bmob.im.BmobUserManager;
 
+import cn.bmob.im.BmobUserManager;
 import xyz.iseeyou.sayhi.App;
 import xyz.iseeyou.sayhi.R;
 import xyz.iseeyou.sayhi.ui.BlackListActivity;
 import xyz.iseeyou.sayhi.ui.FragmentBase;
 import xyz.iseeyou.sayhi.ui.LoginActivity;
-import xyz.iseeyou.sayhi.ui.SetMyInfoActivity;
+import xyz.iseeyou.sayhi.ui.ProfileEdtiActivity;
 import xyz.iseeyou.sayhi.util.SharePreferenceUtil;
 
 /**
@@ -142,7 +142,7 @@ public class SettingsFragment extends FragmentBase implements OnClickListener{
 			startAnimActivity(new Intent(getActivity(),BlackListActivity.class));
 			break;
 		case R.id.layout_info:// 启动到个人资料页面
-			Intent intent =new Intent(getActivity(),SetMyInfoActivity.class);
+			Intent intent =new Intent(getActivity(),ProfileEdtiActivity.class);
 			intent.putExtra("from", "me");
 			startActivity(intent);
 			break;

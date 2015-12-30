@@ -124,7 +124,9 @@
             android:name="xyz.iseeyou.sayhi.ui.MainActivity"
             android:launchMode="singleTask"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-        <activity android:name="xyz.iseeyou.sayhi.ui.LoginActivity" />
+        <activity
+            android:name="xyz.iseeyou.sayhi.ui.LoginActivity"
+            android:launchMode="singleInstance" />
         <activity android:name="xyz.iseeyou.sayhi.ui.LocationActivity" />
         <activity android:name="xyz.iseeyou.sayhi.ui.BlackListActivity" />
         <activity android:name="xyz.iseeyou.sayhi.ui.ImageBrowserActivity" />
@@ -147,6 +149,9 @@
         <activity
             android:name="xyz.iseeyou.sayhi.ui.MainTabActivity"
             android:label="@string/title_activity_main_tab" />
+        <activity
+            android:name="xyz.iseeyou.sayhi.ui.ProfileEdtiActivity"
+            android:label="@string/title_activity_profile_edti" />
     </application>
 
 </manifest>

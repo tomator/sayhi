@@ -122,7 +122,9 @@
             android:name=".ui.MainActivity"
             android:launchMode="singleTask"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-        <activity android:name=".ui.LoginActivity" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:launchMode="singleInstance" />
         <activity android:name=".ui.LocationActivity" />
         <activity android:name=".ui.BlackListActivity" />
         <activity android:name=".ui.ImageBrowserActivity" />
@@ -144,7 +146,10 @@
             android:label="@string/title_activity_new_main" />
         <activity
             android:name=".ui.MainTabActivity"
-            android:label="@string/title_activity_main_tab"></activity>
+            android:label="@string/title_activity_main_tab" />
+        <activity
+            android:name=".ui.ProfileEdtiActivity"
+            android:label="@string/title_activity_profile_edti"></activity>
     </application>
 
 </manifest>

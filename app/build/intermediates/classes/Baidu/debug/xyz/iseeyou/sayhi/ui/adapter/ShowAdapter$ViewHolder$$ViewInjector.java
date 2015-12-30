@@ -7,15 +7,15 @@ import butterknife.ButterKnife.Finder;
 public class ShowAdapter$ViewHolder$$ViewInjector {
   public static void inject(Finder finder, final xyz.iseeyou.sayhi.ui.adapter.ShowAdapter.ViewHolder target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492916, "field 'avatarView'");
+    view = finder.findRequiredView(source, 2131558542, "field 'avatarView'");
     target.avatarView = (android.widget.ImageView) view;
-    view = finder.findRequiredView(source, 2131493013, "field 'nameView'");
+    view = finder.findRequiredView(source, 2131558652, "field 'nameView'");
     target.nameView = (android.widget.TextView) view;
-    view = finder.findRequiredView(source, 2131493014, "field 'ageView'");
+    view = finder.findRequiredView(source, 2131558653, "field 'ageView'");
     target.ageView = (android.widget.TextView) view;
-    view = finder.findRequiredView(source, 2131493015, "field 'addressView'");
+    view = finder.findRequiredView(source, 2131558654, "field 'addressView'");
     target.addressView = (android.widget.TextView) view;
-    view = finder.findRequiredView(source, 2131493016, "field 'distanceView'");
+    view = finder.findRequiredView(source, 2131558655, "field 'distanceView'");
     target.distanceView = (android.widget.TextView) view;
   }
 

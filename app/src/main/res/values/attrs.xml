@@ -4,4 +4,10 @@
     <declare-styleable name="CircularProgress">
         <attr name="borderWidth" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="AccountInputView">
+        <attr name="iconBg" format="reference" />
+        <attr name="textHint" format="string" />
+        <attr name="android:inputType"/>
+    </declare-styleable>
 </resources>

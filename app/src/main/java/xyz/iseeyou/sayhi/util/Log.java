@@ -2,6 +2,7 @@ package xyz.iseeyou.sayhi.util;
 
 
 import xyz.iseeyou.sayhi.App;
+import xyz.iseeyou.sayhi.config.Constants;
 
 /**
  * Created by bici on 15/1/27.
@@ -14,13 +15,13 @@ public class Log {
 
     public static void d(int resId){
         if (isDebugMode()) {
-            android.util.Log.d(Constants.TAG, App.getInstance().getString(resId));
+            android.util.Log.d(Constants.TAG_APP, App.getInstance().getString(resId));
         }
     }
 
     public static void d(String content){
         if (isDebugMode()) {
-            android.util.Log.d(Constants.TAG, content);
+            android.util.Log.d(Constants.TAG_APP, content);
         }
     }
 

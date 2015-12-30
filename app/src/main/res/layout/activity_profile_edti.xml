@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    tools:context="xyz.iseeyou.sayhi.ui.ProfileEdtiActivity">
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="6dp"
+        android:numColumns="4"
+        >
+    </GridView>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称" />
+                <TextView
+                    android:id="@+id/nicknameHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0/10"
+                    android:textColor="@color/md_grey_500"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/nicknameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入昵称"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/full_line_dark_05px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人简介" />
+                <TextView
+                    android:id="@+id/descptionHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0/200"
+                    android:textColor="@color/md_grey_500"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/descptionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="top"
+                android:textSize="14dp"
+                android:hint="请输入个人简介"
+                android:minLines="5" />
+        </LinearLayout>
+        <include layout="@layout/full_line_dark_05px" />
+        <LinearLayout
+            android:id="@+id/genderContainer"
+            style="@style/edit_profile_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textSize="14dp"
+                android:textColor="@color/md_red_500"
+                android:text="设置后将不可以修改"/>
+            <TextView
+                android:id="@+id/genderView"
+                style="@style/edit_profile_right_text"
+                android:text="女" />
+        </LinearLayout>
+        <include layout="@layout/full_line_dark_05px" />
+        <LinearLayout
+            android:id="@+id/birthdayContainer"
+            style="@style/edit_profile_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生日" />
+
+            <TextView
+                android:id="@+id/birthdayView"
+                style="@style/edit_profile_right_text"
+                android:text="1990-07-23" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
