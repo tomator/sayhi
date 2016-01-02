@@ -7,13 +7,12 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,25 +26,26 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+
 import java.io.File;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
-import cn.bmob.im.util.BmobLog;
 import cn.bmob.v3.datatype.BmobFile;
 import cn.bmob.v3.listener.UploadFileListener;
 import xyz.iseeyou.sayhi.R;
 import xyz.iseeyou.sayhi.bean.User;
 import xyz.iseeyou.sayhi.config.BmobConstants;
+import xyz.iseeyou.sayhi.config.Constants;
 import xyz.iseeyou.sayhi.util.DateUtil;
 import xyz.iseeyou.sayhi.util.DensityUtil;
-import xyz.iseeyou.sayhi.util.PhotoUtil;
+import xyz.iseeyou.sayhi.util.Log;
 import xyz.iseeyou.sayhi.view.BiciAlertDialogBuilder;
 
 public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnItemClickListener {
@@ -70,10 +70,22 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
     LinearLayout birthdayContainer;
     public static final int NICKNAME_LIMIT = 10;
     public static final int DESC_LIMIT = 200;
+    private static final String UPLOAD_IMAGE = "upload.jpg";
+    private static final String TEMP_IMAGE = "photo_temp.jpg";
 
     private User user;
     private List<BmobFile> avatarList;
     private AvatarAdapter avatarAdapter;
+    private BmobFile selectFile;
+    public File imageFile = null;
+    private Handler handler = new Handler();
+    private DisplayImageOptions options = new DisplayImageOptions.Builder()
+            .showImageForEmptyUri(R.drawable.avatar_team)
+            .showImageOnLoading(R.drawable.avatar_team)
+            .showImageOnFail(R.drawable.avatar_team)
+            .cacheInMemory(true)
+            .cacheOnDisc(true)
+            .build();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -230,20 +242,19 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(width, width);
             layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
             imageView.setLayoutParams(layoutParams);
-            imageView.setImageResource(R.drawable.avatar_team);
             BmobFile bmobFile = avatarList.get(position);
-            if (!TextUtils.isEmpty(bmobFile.getUrl())) {
-                bmobFile.loadImageThumbnail(mContext, imageView, width, width);
-            }
+            Log.d("getView bmobFile url = " + bmobFile.getUrl()+" position = " + position);
+            ImageLoader.getInstance()
+                    .displayImage(Constants.BMOB_FILE_HEADER + bmobFile.getUrl(), imageView, options);
             return convertView;
         }
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        BmobFile bmobFile = avatarList.get(position);
+        final BmobFile bmobFile = avatarList.get(position);
         String[] items;
-        if (!TextUtils.isEmpty(bmobFile.getUrl())) {
+        if (!TextUtils.isEmpty(bmobFile.getUrl()) && position != 0) {
             items = new String[]{"照相机", "图库", "设为头像", "删除"};
         } else {
             items = new String[]{"照相机", "图库"};
@@ -253,17 +264,16 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent;
+                        selectFile = bmobFile;
                         switch (which) {
                             case 0:
                                 File dir = new File(BmobConstants.MyAvatarDir);
                                 if (!dir.exists()) {
                                     dir.mkdirs();
                                 }
-                                File file = new File(dir, new SimpleDateFormat("yyMMddHHmmss")
-                                        .format(new Date()));
-                                filePath = file.getAbsolutePath();// 获取相片的保存路径
-                                Uri imageUri = Uri.fromFile(file);
-
+                                imageFile = new File(BmobConstants.MyAvatarDir + TEMP_IMAGE);
+                                Log.d("photo path = "+imageFile.getAbsolutePath());
+                                Uri imageUri = Uri.fromFile(imageFile);
                                 intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                                 intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
                                 startActivityForResult(intent,
@@ -273,22 +283,29 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
                                 intent = new Intent(Intent.ACTION_PICK, null);
                                 intent.setDataAndType(
                                         MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
-                                startActivityForResult(intent,
-                                        BmobConstants.REQUESTCODE_UPLOADAVATAR_LOCATION);
+                                try {
+                                    startActivityForResult(intent,
+                                            BmobConstants.REQUESTCODE_UPLOADAVATAR_LOCATION);
+                                } catch (Exception e) {
+                                   ShowToast("找不到可以处理图片的应用。");
+                                }
                                 break;
                             case 2:
+                                int location = avatarList.indexOf(bmobFile);
+                                BmobFile first = avatarList.get(0);
+                                avatarList.set(0, bmobFile);
+                                avatarList.set(location, first);
+                                avatarAdapter.notifyDataSetChanged();
                                 break;
                             case 3:
+                                avatarList.remove(bmobFile);
+                                avatarAdapter.notifyDataSetChanged();
                                 break;
                         }
                     }
                 });
         builder.show();
     }
-
-    boolean isFromCamera = false;// 区分拍照旋转
-    public String filePath = "";
-    int degree = 0;
 
     /**
      * @return void
@@ -297,6 +314,7 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
      */
     private void startImageAction(Uri uri, int outputX, int outputY,
                                   int requestCode, boolean isCrop) {
+        Uri outputUri = Uri.fromFile(new File(BmobConstants.MyAvatarDir + UPLOAD_IMAGE));
         Intent intent = null;
         if (isCrop) {
             intent = new Intent("com.android.camera.action.CROP");
@@ -310,7 +328,7 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
         intent.putExtra("outputX", outputX);
         intent.putExtra("outputY", outputY);
         intent.putExtra("scale", true);
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, outputUri);
         intent.putExtra("return-data", true);
         intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
         intent.putExtra("noFaceDetection", true); // no face detection
@@ -319,50 +337,23 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        // TODO Auto-generated method stub
         super.onActivityResult(requestCode, resultCode, data);
+        Log.d("onActivityResult requestCode = "+requestCode+" resultCode = "+resultCode);
+        if (resultCode != RESULT_OK)
+            return;
         switch (requestCode) {
             case BmobConstants.REQUESTCODE_UPLOADAVATAR_CAMERA:// 拍照修改头像
-                if (resultCode == RESULT_OK) {
-                    if (!Environment.getExternalStorageState().equals(
-                            Environment.MEDIA_MOUNTED)) {
-                        ShowToast("SD不可用");
-                        return;
-                    }
-                    isFromCamera = true;
-                    File file = new File(filePath);
-                    degree = PhotoUtil.readPictureDegree(file.getAbsolutePath());
-                    Log.i("life", "拍照后的角度：" + degree);
-                    startImageAction(Uri.fromFile(file), 200, 200,
-                            BmobConstants.REQUESTCODE_UPLOADAVATAR_CROP, true);
-                }
+                cropImageUri(Uri.fromFile(imageFile));
                 break;
             case BmobConstants.REQUESTCODE_UPLOADAVATAR_LOCATION:// 本地修改头像
-                Uri uri = null;
-                if (data == null) {
-                    return;
-                }
-                if (resultCode == RESULT_OK) {
-                    if (!Environment.getExternalStorageState().equals(
-                            Environment.MEDIA_MOUNTED)) {
-                        ShowToast("SD不可用");
-                        return;
-                    }
-                    isFromCamera = false;
-                    uri = data.getData();
-                    startImageAction(uri, 200, 200,
-                            BmobConstants.REQUESTCODE_UPLOADAVATAR_CROP, true);
-                } else {
-                    ShowToast("照片获取失败");
-                }
-
+                cropImageUri(data.getData());
                 break;
             case BmobConstants.REQUESTCODE_UPLOADAVATAR_CROP:// 裁剪头像返回
                 if (data == null) {
-                    ShowToast("取消选择");
+                    ShowToast("已取消选择图片");
                     return;
                 } else {
-                    uploadAvatar(saveCropAvator(data));
+                    uploadAvatar();
                 }
                 break;
             default:
@@ -370,54 +361,57 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
         }
     }
 
-    private void uploadAvatar(String path) {
-        BmobLog.i("头像地址：" + path);
-        final BmobFile bmobFile = new BmobFile(new File(path));
+    protected void cropImageUri(Uri uri) {
+        Uri outputUri = Uri.fromFile(new File(BmobConstants.MyAvatarDir + UPLOAD_IMAGE));
+        Intent intent = new Intent("com.android.camera.action.CROP");
+        intent.setDataAndType(uri, "image/*");
+        intent.putExtra("crop", "true");
+        intent.putExtra("aspectX", 1);
+        intent.putExtra("aspectY", 1);
+        intent.putExtra("outputX", 1080);
+        intent.putExtra("outputY", 1080);
+        intent.putExtra("scale", true);
+        intent.putExtra("scaleUpIfNeeded", true); // 去黑边
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, outputUri);
+        intent.putExtra("return-data", false);
+        intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
+        intent.putExtra("noFaceDetection", true); // no face detection
+        startActivityForResult(intent, BmobConstants.REQUESTCODE_UPLOADAVATAR_CROP);
+    }
+
+    private void uploadAvatar() {
+        String uploadPath = BmobConstants.MyAvatarDir + UPLOAD_IMAGE;
+        Log.d(getClass()+" 头像地址：" + uploadPath);
+        final BmobFile bmobFile = new BmobFile(new File(uploadPath));
         bmobFile.upload(this, new UploadFileListener() {
             @Override
             public void onSuccess() {
                 String url = bmobFile.getFileUrl(ProfileEdtiActivity.this);
+                Log.d("uploadAvatar success url = " + url);
+                ShowToast("图片上传成功");
+                if(TextUtils.isEmpty(selectFile.getUrl())){
+                    avatarList.add(avatarList.size() - 1, bmobFile);
+                }else{
+                    avatarList.set(avatarList.indexOf(selectFile), bmobFile);
+                }
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        avatarAdapter.notifyDataSetChanged();
+                    }
+                }, 200);
             }
 
             @Override
             public void onProgress(Integer arg0) {
                 // TODO Auto-generated method stub
+                Log.d("uploadAvatar onProgress "+arg0);
             }
 
             @Override
             public void onFailure(int arg0, String msg) {
-                ShowToast("头像上传失败：" + msg);
+                ShowToast("图片上传失败：" + msg);
             }
         });
-    }
-
-    /**
-     * 保存裁剪的头像
-     *
-     * @param data
-     */
-    private String saveCropAvator(Intent data) {
-        Bundle extras = data.getExtras();
-        if (extras != null) {
-            Bitmap bitmap = extras.getParcelable("data");
-            Log.i("life", "avatar - bitmap = " + bitmap);
-            if (bitmap != null) {
-                bitmap = PhotoUtil.toRoundCorner(bitmap, 10);
-                if (isFromCamera && degree != 0) {
-                    bitmap = PhotoUtil.rotaingImageView(degree, bitmap);
-                }
-                // 保存图片
-                String filename = new SimpleDateFormat("yyMMddHHmmss")
-                        .format(new Date()) + ".png";
-                String path = BmobConstants.MyAvatarDir + filename;
-                PhotoUtil.saveBitmap(BmobConstants.MyAvatarDir, filename,
-                        bitmap, true);// 上传头像
-                if (bitmap != null && bitmap.isRecycled()) {
-                    bitmap.recycle();
-                }
-                return path;
-            }
-        }
-        return null;
     }
 }

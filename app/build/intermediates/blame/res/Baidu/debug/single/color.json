@@ -1,15 +1,15 @@
 [
     {
-        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/tab_indicator_text_selector.xml",
-        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/color/tab_indicator_text_selector.xml"
-    },
-    {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/abc_background_cache_hint_selector_material_dark.xml",
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/color/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/abc_primary_text_disable_only_material_dark.xml",
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/tab_indicator_text_selector.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/color/tab_indicator_text_selector.xml"
     },
     {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/abc_primary_text_material_light.xml",
@@ -48,11 +48,11 @@
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/vpi__dark_theme.xml",
-        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/color/vpi__dark_theme.xml"
-    },
-    {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/abc_secondary_text_material_dark.xml",
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/color/vpi__dark_theme.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.viewpagerindicator/viewPagerIndicator-release/res/color/vpi__dark_theme.xml"
     }
 ]

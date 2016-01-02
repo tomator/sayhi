@@ -20,12 +20,12 @@
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/anim/abc_slide_in_top.xml"
     },
     {
-        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/anim/grow_from_bottom.xml",
-        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/anim/grow_from_bottom.xml"
-    },
-    {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/anim/abc_slide_out_bottom.xml",
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/anim/grow_from_bottom.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/anim/grow_from_bottom.xml"
     },
     {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/anim/abc_fade_out.xml",

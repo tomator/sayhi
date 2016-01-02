@@ -21,7 +21,7 @@ public class BmobConstants {
 	/**
 	 * 我的头像保存目录
 	 */
-	public static String MyAvatarDir = "/sdcard/sayhi/avatar/";
+	public static String MyAvatarDir = Environment.getExternalStorageDirectory() + "/sayhi/avatar/";
 	/**
 	 * 拍照回调
 	 */

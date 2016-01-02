@@ -12,12 +12,12 @@
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/tab_set_btn.xml",
-        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/tab_set_btn.xml"
-    },
-    {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/btn_chat_record_selector.xml",
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/btn_chat_record_selector.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/tab_set_btn.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/tab_set_btn.xml"
     },
     {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/dialog_btn_selector.xml",
@@ -32,12 +32,12 @@
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/progress_black.xml"
     },
     {
-        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/btn_chat_voice_selector.xml",
-        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/btn_chat_voice_selector.xml"
-    },
-    {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/tab_textcolor.xml",
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/tab_textcolor.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/btn_chat_voice_selector.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/btn_chat_voice_selector.xml"
     },
     {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/btn_chat_add_picture_selector.xml",
@@ -76,12 +76,12 @@
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/recent_message_text_color_selector.xml",
-        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/recent_message_text_color_selector.xml"
-    },
-    {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/btn_logout_selector.xml",
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/btn_logout_selector.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/recent_message_text_color_selector.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/recent_message_text_color_selector.xml"
     },
     {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/anim_chat_voice_left.xml",
@@ -116,12 +116,12 @@
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/v2_gallery_contacts_dialog_background.xml"
     },
     {
-        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/recent_name_text_color_selector.xml",
-        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/recent_name_text_color_selector.xml"
-    },
-    {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/dialog_shape_normal.xml",
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/dialog_shape_normal.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/recent_name_text_color_selector.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/recent_name_text_color_selector.xml"
     },
     {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/base_action_bar_more_bg_selector.xml",
@@ -176,12 +176,12 @@
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/base_action_bar_true_bg_selector.xml",
-        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/base_action_bar_true_bg_selector.xml"
-    },
-    {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/btn_emote_selector.xml",
         "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/btn_emote_selector.xml"
+    },
+    {
+        "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/base_action_bar_true_bg_selector.xml",
+        "source": "/Users/bici/AndroidStudioProjects/sayhi/app/src/main/res/drawable/base_action_bar_true_bg_selector.xml"
     },
     {
         "merged": "/Users/bici/AndroidStudioProjects/sayhi/app/build/intermediates/res/merged/Baidu/debug/drawable/btn_send_selector.xml",
