@@ -957,7 +957,7 @@
     <string name="xlistview_header_last_time">上次更新时间：</string>
     <style name="ActionBar">
         <item name="android:orientation">horizontal</item>
-        <item name="android:background">@color/global_pink</item>
+        <item name="android:background">@color/white</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_height">@dimen/base_action_bar_height</item>

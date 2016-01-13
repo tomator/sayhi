@@ -7,7 +7,6 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.text.Editable;
@@ -38,6 +37,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 import cn.bmob.v3.datatype.BmobFile;
+import cn.bmob.v3.listener.UpdateListener;
 import cn.bmob.v3.listener.UploadFileListener;
 import xyz.iseeyou.sayhi.R;
 import xyz.iseeyou.sayhi.bean.User;
@@ -78,7 +78,6 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
     private AvatarAdapter avatarAdapter;
     private BmobFile selectFile;
     public File imageFile = null;
-    private Handler handler = new Handler();
     private DisplayImageOptions options = new DisplayImageOptions.Builder()
             .showImageForEmptyUri(R.drawable.avatar_team)
             .showImageOnLoading(R.drawable.avatar_team)
@@ -92,6 +91,7 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_edti);
         ButterKnife.inject(this);
+
         user = userManager.getCurrentUser(User.class);
         avatarList = user.getAvatars();
         if (avatarList == null) {
@@ -156,12 +156,15 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
             }
         });
         genderView.setText(user.getSex() != null && user.getSex() ? "男" : "女");
-
     }
 
     @OnClick(R.id.genderContainer)
     void genderClick() {
-        showGenderDialog();
+        if(user.getSex() == null){
+            showGenderDialog();
+        }else {
+            ShowToast("性别不可以修改。");
+        }
     }
 
     @OnClick(R.id.birthdayContainer)
@@ -192,6 +195,7 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
                         long timeStamp = calendar.getTimeInMillis();
                         String detaStr = DateUtil.format(timeStamp, 1);
                         birthdayView.setText(detaStr);
+                        user.setBirthday(timeStamp);
                     }
                 }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
             @Override
@@ -208,7 +212,7 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
                 .setItems(strings, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                        user.setSex(which != 0);
                     }
                 }).show();
     }
@@ -307,34 +311,6 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
         builder.show();
     }
 
-    /**
-     * @return void
-     * @throws
-     * @Title: startImageAction
-     */
-    private void startImageAction(Uri uri, int outputX, int outputY,
-                                  int requestCode, boolean isCrop) {
-        Uri outputUri = Uri.fromFile(new File(BmobConstants.MyAvatarDir + UPLOAD_IMAGE));
-        Intent intent = null;
-        if (isCrop) {
-            intent = new Intent("com.android.camera.action.CROP");
-        } else {
-            intent = new Intent(Intent.ACTION_GET_CONTENT, null);
-        }
-        intent.setDataAndType(uri, "image/*");
-        intent.putExtra("crop", "true");
-        intent.putExtra("aspectX", 1);
-        intent.putExtra("aspectY", 1);
-        intent.putExtra("outputX", outputX);
-        intent.putExtra("outputY", outputY);
-        intent.putExtra("scale", true);
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, outputUri);
-        intent.putExtra("return-data", true);
-        intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
-        intent.putExtra("noFaceDetection", true); // no face detection
-        startActivityForResult(intent, requestCode);
-    }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -389,28 +365,56 @@ public class ProfileEdtiActivity extends ActivityBase implements AdapterView.OnI
                 String url = bmobFile.getFileUrl(ProfileEdtiActivity.this);
                 Log.d("uploadAvatar success url = " + url);
                 ShowToast("图片上传成功");
-                if(TextUtils.isEmpty(selectFile.getUrl())){
+                if (TextUtils.isEmpty(selectFile.getUrl()) && avatarList.size() < 8) {
                     avatarList.add(avatarList.size() - 1, bmobFile);
-                }else{
+                } else {
                     avatarList.set(avatarList.indexOf(selectFile), bmobFile);
                 }
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        avatarAdapter.notifyDataSetChanged();
-                    }
-                }, 200);
+                avatarAdapter.notifyDataSetChanged();
             }
 
             @Override
             public void onProgress(Integer arg0) {
                 // TODO Auto-generated method stub
-                Log.d("uploadAvatar onProgress "+arg0);
+                Log.d("uploadAvatar onProgress " + arg0);
             }
 
             @Override
             public void onFailure(int arg0, String msg) {
                 ShowToast("图片上传失败：" + msg);
+            }
+        });
+    }
+
+    private boolean checkEmpty(){
+        if(user.getAvatars() == null || user.getAvatars().size() <= 1){
+            return false;
+        }
+        if(TextUtils.isEmpty(user.getNick())){
+            return false;
+        }
+        if(TextUtils.isEmpty(user.getDescription())){
+            return false;
+        }
+        if(user.getSex() == null){
+            return false;
+        }
+        if(user.getBirthday() == 0){
+            return false;
+        }
+        return true;
+    }
+
+    private void updateUserData(){
+        user.update(this, new UpdateListener() {
+            @Override
+            public void onSuccess() {
+            }
+
+            @Override
+            public void onFailure(int i, String s) {
+                ShowToast("信息修改失败,请检查网络连接");
+                initView();
             }
         });
     }
